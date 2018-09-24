@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.widget;
+package androidx.recyclerview.widget;
 
 import android.view.View;
 
@@ -38,25 +38,29 @@ public abstract class BindAwareViewHolder extends RecyclerView.ViewHolder {
 
   }
 
-  @Override void setFlags(int flags, int mask) {
+  @Override
+  void setFlags(int flags, int mask) {
     boolean wasBound = isBound();
     super.setFlags(flags, mask);
     notifyBinding(wasBound, isBound());
   }
 
-  @Override void addFlags(int flags) {
+  @Override
+  void addFlags(int flags) {
     boolean wasBound = isBound();
     super.addFlags(flags);
     notifyBinding(wasBound, isBound());
   }
 
-  @Override void clearPayload() {
+  @Override
+  void clearPayload() {
     boolean wasBound = isBound();
     super.clearPayload();
     notifyBinding(wasBound, isBound());
   }
 
-  @Override void resetInternal() {
+  @Override
+  void resetInternal() {
     boolean wasBound = isBound();
     super.resetInternal();
     notifyBinding(wasBound, isBound());
