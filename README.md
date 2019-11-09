@@ -1,4 +1,4 @@
-AutoDispose
+AutoDispose Sample Change
 ===========
 
 [![Build Status](https://travis-ci.com/uber/AutoDispose.svg?branch=master)](https://travis-ci.org/uber/AutoDispose)
